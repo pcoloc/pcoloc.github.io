@@ -28,25 +28,25 @@ function Img(){
         // Change position ONLY IF YOU KNOW WHAY YOU ARE DOING     "-123px"
         document.getElementById('img').style.backgroundPositionY = "-210px";
         // YOU CAN CHANGE YOUR NAME HERE               "Good morning Yourname!"
-        document.getElementById('welcome').innerHTML = "Good morning Sempai!";
+        document.getElementById('welcome').innerHTML = "Good morning Paco!";
     }
     if(h>=12 && h<=16) {
         document.getElementById('img').style.backgroundImage = "url('img/day1.jpg')";
         document.getElementById('img').style.backgroundPositionY = "-250px";
         // ALSO CHANGE YOUR NAME HERE                  "Good morning Yourname!"
-        document.getElementById('welcome').innerHTML = "Good day Sempai!";
+        document.getElementById('welcome').innerHTML = "Good day Paco!";
     }
     if(h>=17 && h<=19) {
         document.getElementById('img').style.backgroundImage = "url('img/noon1.jpg')";
         document.getElementById('img').style.backgroundPositionY = "-150px";
         // ALSO CHANGE YOUR NAME HERE                  "Good morning Yourname!"
-        document.getElementById('welcome').innerHTML = "Good afternoon Sempai!";
+        document.getElementById('welcome').innerHTML = "Good afternoon Paco!";
     }
     if((h>=20 && h<=23) || (h>=0 && h<=5)){
         document.getElementById('img').style.backgroundImage = "url('img/night1.jpg')";
         document.getElementById('img').style.backgroundPositionY = "-240px";
         // ALSO CHANGE YOUR NAME HERE                  "Good morning Yourname!"
-        document.getElementById('welcome').innerHTML = "Good night Sempai!";
+        document.getElementById('welcome').innerHTML = "Good night Paco!";
     }
 }
 function Datum(){
