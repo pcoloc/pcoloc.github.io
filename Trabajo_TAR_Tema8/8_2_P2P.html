@@ -4,9 +4,22 @@
 <h1>8.2.	Conexiones	punto	a	punto.</h1>
 </head>  
   <body>
-  <h2 id="8-2-1"> 8.2.1	Descripción	general	de	punto	a	punto	serie.</h2>
+     <h2 id="8-2-1"> 8.2.1	Descripción	general	de	punto	a	punto	serie.</h2>
+   <h3>En una red punto a punto, los dispositivos en red actúan como socios iguales, o pares entre sí. Como pares, cada dispositivo puede tomar el rol de emisor o la función de receptor. En un momento, el dispositivo A, por ejemplo, puede hacer una petición de un mensaje / dato del dispositivo B, y este es el que le responde enviando el mensaje / dato al dispositivo A. El dispositivo A funciona como receptor, mientras que B funciona como emisor. Un momento después los dispositivos A y B pueden revertir los roles: B, como receptor, hace una solicitud a A, y A, como emisor, responde a la solicitud de B. A y B permanecen en una relación recíproca o par entre ellos.</h3>
+ 
     <h2 id="8-2-2"> 8.2.2	Operación	de	PPP.</h2>
+     <h3>El protocolo PPP proporciona un método estándar para transportar datagramas multiprotocolo sobre enlaces simples punto a punto entre 2 pares.
+      <li>1. Un mecanismo de enmarcado para encapsular datagramas multiprotocolo y manejar la detección de errores.</li>
+
+      <li> 2. Un protocolo de control de enlace (LCP, Link Control Protocol) para establecer, configurar y probar la conexión de datos.</li>
+
+      <li>3. Una familia de protocolos de control de red (NCPs, Network Control Protocols) para establecer y configurar los distintos protocolos de nivel de red.</li>
+    </h3>
       <h2 id="8-2-3"> 8.2.3	Implementación	de	PPP.</h2>
+    <h3>Los enlaces PPP son fáciles de configurar. El estándar por defecto maneja todas las configuraciones simples. Se pueden especificar mejoras en la configuración por defecto, las cuales son automáticamente comunicadas al "par" sin la intervención del operador. Finalmente, el operador puede configurar explícitamente las opciones para el enlace, lo cual lo habilita para operar en ambientes donde de otra manera sería imposible.
+
+Esta auto-configuración es implementada a través de un mecanismo de negociación de opciones extensible en el cual cada extremo del enlace describe al otro sus capacidades y requerimientos.</h3>
         <h2 id="8-2-4">8.2.4	Solución	de	problemas	de	conectividad	WAN.</h2>
+    <h3>Para comprobar que el protocolo esta activo se usa los comandos "show interface serial" y "show ppp multilink", para comprobar que esta habilitado y obtener informacion del multienlace respectivamente. Pero para la solucion de los problemas se usa el comando "debug ppp {packet | negotiayion | error | authentication | compresion | cbcp}" para mostrar los paquetes transmitidos, los pertenecientes a la fase de negociacion de la configuracion, autentificacion, compresion y los errores de protocolos respectivamente.</h3>
   </body>   
   </html>
